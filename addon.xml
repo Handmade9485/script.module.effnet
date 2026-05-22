@@ -1,0 +1,17 @@
+<addon id="script.module.effnet"
+       version="0.1.0"
+       name="Similar Playlist Generator"
+       provider-name="Handmade9485">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.mutagen" version="1.47.0"/>
+    </requires>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="effnetGenerator.py">
+                <label>Generate EffNet Playlist</label>
+                <visible>true</visible>
+            </item>
+        </menu>
+    </extension>
+</addon>
