@@ -10,7 +10,7 @@
         <menu id="kodi.core.main">
             <item library="effnetGenerator.py">
                 <label>Generate EffNet Playlist</label>
-                <visible>true</visible>
+                <visible>String.IsEqual(ListItem.DBTYPE,song)</visible>
             </item>
         </menu>
     </extension>
